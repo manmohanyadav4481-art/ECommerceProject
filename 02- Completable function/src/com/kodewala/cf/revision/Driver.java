@@ -1,0 +1,16 @@
+package com.kodewala.cf.revision;
+
+import java.util.concurrent.CompletableFuture;
+
+public class Driver {
+	
+	public static void main(String[] args) {
+		
+		CompletableFuture<Integer>future1 =CompletableFuture.supplyAsync(()->10);
+		CompletableFuture<Integer>future2 =CompletableFuture.supplyAsync(()->120);
+		CompletableFuture<Integer>finalfuture =future1.thenCombine(future2, (n1,n2)->n1+n2);
+		CompletableFuture.anyOf(future1,future2);
+		
+		System.out.println("the task is complete "+finalfuture.join());
+	}
+}

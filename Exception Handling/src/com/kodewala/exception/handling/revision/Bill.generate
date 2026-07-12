@@ -1,0 +1,5 @@
+employeeId,employeename,salaryamount,employeeEmailId
+E001,John Doe,55000,john.doe@example.com
+E002,Jane Smith,62000,jane.smith@example.com
+E003,Bob Johnson,48000,bob.j@example.com
+E004,Alice Brown,70000,a.brown@example.com
