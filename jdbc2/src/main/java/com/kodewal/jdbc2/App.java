@@ -1,4 +1,4 @@
-package com.kodewal.jdbc;
+package com.kodewal.jdbc2;
 
 import java.sql.SQLException;
 
@@ -6,12 +6,12 @@ public class App
 {
     public static void main( String[] args )
     {
-        PaymentService paymentService = new PaymentService();
+        PaymentServic paymentService = new PaymentServic();
         try {
-			paymentService.getAllPayments();
+			paymentService.getAllPayments("Paid");
 		} catch (ClassNotFoundException | SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-    }
+}
 }

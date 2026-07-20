@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.kodewal</groupId>
-  <artifactId>jdbc</artifactId>
+  <artifactId>jdbc2</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>jdbc</name>
+  <name>jdbc2</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -16,7 +16,7 @@
 
   <dependencies>
   
-  <!-- Source: https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+   <!-- Source: https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
 <dependency>
     <groupId>mysql</groupId>
     <artifactId>mysql-connector-java</artifactId>
