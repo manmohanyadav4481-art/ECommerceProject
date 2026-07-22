@@ -1,0 +1,48 @@
+package com.amazon.user1.Beans;
+
+public class User 
+{
+   private String userName;
+   private String type;
+   private String location;
+   
+   
+	public void displayInfo()
+	{
+	
+	 System.out.println("User [userName=" + userName + ", type=" + type + ", location=" + location + "]" 
+	);
+	}
+
+
+	public String getUserName() {
+		return userName;
+	}
+
+
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+
+
+	public String getType() {
+		return type;
+	}
+
+
+	public void setType(String type) {
+		this.type = type;
+	}
+
+
+	public String getLocation() {
+		return location;
+	}
+
+
+	public void setLocation(String location) {
+		this.location = location;
+	}
+	
+	
+}
