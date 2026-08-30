@@ -1,0 +1,21 @@
+$kind: http-request
+url: http://localhost:8081/order/place
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: "{\r
+
+    \    \"customerId\": 101,\r
+
+    \    \"productId\": 501,\r
+
+    \    \"quantity\": 2,\r
+
+    \    \"paymentMethod\": \"UPI\",\r
+
+    \    \"shippingAddress\": \"Bangalore\"\r
+
+    }"
+order: 420305260137377

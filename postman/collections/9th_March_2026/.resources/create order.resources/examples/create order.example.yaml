@@ -1,0 +1,28 @@
+$kind: http-example
+request:
+  url: POST http://localhost:8081/order/place
+  method: POST
+  headers:
+    Content-Type: application/json
+  body:
+    type: json
+    content: "{\r
+
+      \    \"customerId\": 1304,\r
+
+      \    \"productId\": 501,\r
+
+      \    \"quantity\": 2,\r
+
+      \    \"paymentMethod\": \"credit card\",\r
+
+      \    \"shippingAddress\": \"Bengaluru, Karnataka\"\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: ""
+  body:
+    type: json
+    content: ""
+order: 1787903660918

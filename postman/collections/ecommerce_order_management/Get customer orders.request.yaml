@@ -1,0 +1,24 @@
+$kind: http-request
+name: Get customer orders
+url: http://localhost:8081/orders/customer/1
+method: GET
+body:
+  type: json
+  content: "[\r
+
+    \    {\r
+
+    \        \"id\": 1,\r
+
+    \        \"orderNumber\": \"ORD101\",\r
+
+    \        \"orderDate\": \"2026-08-27\",\r
+
+    \        \"totalAmount\": 1500.5,\r
+
+    \        \"status\": \"PLACED\"\r
+
+    \    }\r
+
+    ]"
+order: 3413777704863801

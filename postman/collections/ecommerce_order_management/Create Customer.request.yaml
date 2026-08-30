@@ -1,0 +1,18 @@
+$kind: http-request
+name: Create Customer
+url: http://localhost:8081/orders/customer/1
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"orderNumber\": \"ORD101\",\r
+
+    \    \"orderDate\": \"2026-08-27\",\r
+
+    \    \"totalAmount\": 1500.50,\r
+
+    \    \"status\": \"PLACED\"\r
+
+    }"
+order: 2098265908802379

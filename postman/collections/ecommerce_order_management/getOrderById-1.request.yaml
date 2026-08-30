@@ -1,0 +1,24 @@
+$kind: http-request
+name: getOrderById
+url: " http://localhost:8082/orders/findOrder?id=101"
+method: GET
+headers:
+  Content-Type: application/json
+queryParams:
+  id: "101"
+body:
+  type: json
+  content: "{\r
+
+    \  \"id\": 1,\r
+
+    \  \"orderId\": 101,\r
+
+    \  \"customerId\": 501,\r
+
+    \  \"productId\": 201,\r
+
+    \  \"quantity\": 2\r
+
+    }"
+order: 1787103655654

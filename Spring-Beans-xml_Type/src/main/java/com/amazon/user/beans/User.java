@@ -9,3 +9,6 @@ public class User
 	}
 	
 }
+
+// springcontext maven dependancy  google search 
+// spring xml file scheam beans  google search

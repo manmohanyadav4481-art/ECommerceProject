@@ -1,0 +1,22 @@
+$kind: http-request
+name: create order
+url: http://localhost:8081/order/place
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"customerId\": 1,\r
+
+    \    \"productId\": 10,\r
+
+    \    \"quantity\": 2,\r
+
+    \    \"paymentMethod\": \"UPI\",\r
+
+    \    \"shippingAddress\": \"Bangalore\",\r
+
+    \    \"paymentStatus\": \"PAID\"\r
+
+    }"
+order: 1788074110103
