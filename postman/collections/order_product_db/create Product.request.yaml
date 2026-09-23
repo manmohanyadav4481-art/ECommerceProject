@@ -1,0 +1,19 @@
+$kind: http-request
+url: http://localhost:8081/product/create
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"name\": \"Fruits\",\r
+
+    \  \"description\": \"Fresh and healthy fruits\",\r
+
+    \  \"imageUrl\": \"https://example.com/fruits.jpg\",\r
+
+    \  \"active\": \"true\",\r
+
+    \  \"categoryId\": \"1\"\r
+
+    }"
+order: 2610513479094465

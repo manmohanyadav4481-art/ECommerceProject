@@ -12,6 +12,7 @@ public class Driver {
 		
         CompletableFuture<Integer> finalfuture = future1.thenCombineAsync(future2, (n1,n2) ->n1+n2);
        
+        //CompletableFuture.allOf(future1, future2);
         CompletableFuture.anyOf(future1, future2);
         
         System.out.println("Task has been completed....");

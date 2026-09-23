@@ -1,0 +1,4 @@
+$kind: http-request
+url: http://localhost:8081/category/showCatgories
+method: GET
+order: 2797995071974124

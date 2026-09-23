@@ -1,0 +1,22 @@
+$kind: http-request
+description: ""
+url: http://localhost:8081/product/create
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: "{\r
+
+    \    \"name\": \"Jense\",\r
+
+    \    \"description\": \"clothing and fashion\",\r
+
+    \    \"price\": 120.50,\r
+
+    \    \"quantity\": 10,\r
+
+    \    \"categoryId\": \"1\"\r
+
+    }"
+order: 708695662540460
