@@ -1,0 +1,27 @@
+$kind: http-request
+url: http://localhost:8081/payments
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: "{\r
+
+    \  \"eventId\": \"...\",\r
+
+    \  \"eventType\": \"PAYMENT_SUCCESS\",\r
+
+    \  \"orderId\": 10,\r
+
+    \  \"customerId\": 101,\r
+
+    \  \"amount\": 7500.0,\r
+
+    \  \"paymentId\": \"TXN2D44D2E0\",\r
+
+    \  \"paymentMethod\": \"UPI\",\r
+
+    \  \"paymentStatus\": \"SUCCESS\"\r
+
+    }"
+order: 1790301394034

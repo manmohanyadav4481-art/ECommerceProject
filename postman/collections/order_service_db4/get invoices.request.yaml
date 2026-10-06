@@ -1,0 +1,26 @@
+$kind: http-request
+url: http://localhost:8081/invoice/listInvoices? page=0&size=3
+method: GET
+headers:
+  Content-Type: Application/json
+queryParams:
+  - key: " page"
+    value: "0"
+    disabled: false
+    description: ""
+  - key: size
+    value: "3"
+    disabled: false
+    description: ""
+body:
+  type: json
+  content: "{\r
+
+    \"cutomerName\" : \"kodewala Acodemy\",\r
+
+    \"gst\": 18,\r
+
+    \"status\" : \"ACTIVE\"\r
+
+    }"
+order: 2022357280371608

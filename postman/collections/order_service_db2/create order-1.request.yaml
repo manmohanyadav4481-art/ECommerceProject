@@ -1,0 +1,23 @@
+$kind: http-request
+name: create order
+url: http://localhost:8081/order/place?
+method: GET
+headers:
+  Content-Type: application/json
+queryParams:
+  - key: ""
+    value: null
+    disabled: false
+    description: ""
+body:
+  type: json
+  content: "{\r
+
+    \    \"customerId\": 101,\r
+
+    \    \"amount\": 7500.0,\r
+
+    \    \"deliverAddress\": \"Bangalore\"\r
+
+    }"
+order: 4215366849160259

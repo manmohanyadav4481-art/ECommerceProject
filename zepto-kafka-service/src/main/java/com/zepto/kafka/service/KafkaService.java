@@ -13,37 +13,34 @@ public class KafkaService {
     public void sendMessage(String topic, String message) {
 
         System.out.println(
-                "KafkaService.sendMessage() ::::: SENDING MESSAGE TO KAFKA"
+            "KafkaService.sendMessage() ::::: SENDING MESSAGE TO KAFKA"
         );
 
         kafkaTemplate.send(topic, message)
-                .whenComplete((result, exception) -> {
+            .whenComplete((result, exception) -> {
 
-                    if (exception == null) {
-                        System.out.println(
-                                "Kafka message sent successfully"
-                        );
+                if (exception == null) {
 
-                        System.out.println(
-                                "Topic: " + result.getRecordMetadata().topic()
-                        );
+                    System.out.println("Kafka message sent successfully");
 
-                        System.out.println(
-                                "Partition: " +
-                                result.getRecordMetadata().partition()
-                        );
+                    System.out.println(
+                        "Topic: " + result.getRecordMetadata().topic()
+                    );
 
-                        System.out.println(
-                                "Offset: " +
-                                result.getRecordMetadata().offset()
-                        );
+                    System.out.println(
+                        "Partition: " + result.getRecordMetadata().partition()
+                    );
 
-                    } else {
-                        System.out.println(
-                                "Kafka message failed: "
-                                + exception.getMessage()
-                        );
-                    }
-                });
+                    System.out.println(
+                        "Offset: " + result.getRecordMetadata().offset()
+                    );
+
+                } else {
+
+                    System.out.println(
+                        "Kafka message failed: " + exception.getMessage()
+                    );
+                }
+            });
     }
 }
