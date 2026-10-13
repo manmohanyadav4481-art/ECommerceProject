@@ -1,0 +1,8 @@
+2026-10-08 14:09:30.283 [RMI TCP Connection(12)-192.168.1.7] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-10-08 14:09:30.309 [RMI TCP Connection(12)-192.168.1.7] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-08 14:09:30.313 [tomcat-shutdown] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8081"]
+2026-10-08 14:09:30.338 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-10-08 14:09:30.340 [RMI TCP Connection(12)-192.168.1.7] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8081"]
+2026-10-08 14:09:30.378 [RMI TCP Connection(12)-192.168.1.7] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-10-08 14:09:30.380 [RMI TCP Connection(12)-192.168.1.7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-10-08 14:09:30.389 [RMI TCP Connection(12)-192.168.1.7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
